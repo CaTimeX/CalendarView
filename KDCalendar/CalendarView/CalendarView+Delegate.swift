@@ -109,7 +109,26 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         let monthName = DateFormatter().monthSymbols[(month-1) % 12] // 0 indexed array
         
         let year = self.calendar.component(.year, from: date)
-
+        
+        if (monthName == "January") {
+            monthName = "Januar"
+        } else if (monthName == "February" {
+            monthName = "Februar"
+        } else if (monthName == "March" {
+            monthName = "März"
+        } else if (monthName == "May" {
+            monthName = "Mai"
+        } else if (monthName == "June" {
+            monthName = "Juni"
+        } else if (monthName == "July" {
+            monthName = "Juli"
+        } else if (monthName == "October" {
+            monthName = "Oktober"
+        } else if (monthName == "December" {
+            monthName = "Dezember"
+        } 
+        
+        
         self.headerView.monthLabel.text = dataSource?.headerString(date) ?? monthName + " " + String(year)
         
         self.displayDate = date
