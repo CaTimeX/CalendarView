@@ -53,19 +53,19 @@ open class CalendarHeaderView: UIView {
             
             weekdayLabel.text = formatter.shortWeekdaySymbols[(index % 7)]
             
-            if(weekdayLabel.text = "Mon") {
+            if(weekdayLabel.text == "Mon") {
                 weekdayLabel.text = "Mo"
-            } else if (weekdayLabel.text = "Tue") {
+            } else if (weekdayLabel.text == "Tue") {
                 weekdayLabel.text = "Di"
-            } else if (weekdayLabel.text = "Wed") {
+            } else if (weekdayLabel.text == "Wed") {
                 weekdayLabel.text = "Mi"
-            } else if (weekdayLabel.text = "Thu") {
+            } else if (weekdayLabel.text == "Thu") {
                 weekdayLabel.text = "Fri"
-            } else if (weekdayLabel.text = "Fri") {
+            } else if (weekdayLabel.text == "Fri") {
                 weekdayLabel.text = "Fr"
-            } else if (weekdayLabel.text = "Sat") {
+            } else if (weekdayLabel.text == "Sat") {
                 weekdayLabel.text = "Sa"
-            } else if (weekdayLabel.text = "Sun") {
+            } else if (weekdayLabel.text == "Sun") {
                 weekdayLabel.text = "So"
             } 
             
