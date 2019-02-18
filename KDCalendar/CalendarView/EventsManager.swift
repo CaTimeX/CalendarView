@@ -75,6 +75,22 @@ open class EventsManager {
             return false
         }
     }
+    static func removeEvent(event calendarEvent: CalendarEvent) -> Bool {
+        
+        let secondsFromGMTDifference = TimeInterval(TimeZone.current.secondsFromGMT()) * -1
+        
+        let event = EKEvent(eventStore: store)
+        event.title = calendarEvent.title
+        event.startDate = calendarEvent.startDate.addingTimeInterval(secondsFromGMTDifference)
+        event.endDate = calendarEvent.endDate.addingTimeInterval(secondsFromGMTDifference)
+        event.calendar = store.defaultCalendarForNewEvents
+        do {
+            try store.remove(event, span: .thisEvent)
+            return true
+        } catch {
+            return false
+        }
+    }
     
     private static func fetch(from fromDate: Date, to toDate: Date, complete onComplete: @escaping ([CalendarEvent]) -> Void) {
         
