@@ -112,19 +112,19 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         
         if (monthName == "January") {
             monthName = "Januar"
-        } else if (monthName == "February" {
+        } else if (monthName == "February") {
             monthName = "Februar"
-        } else if (monthName == "March" {
+        } else if (monthName == "March") {
             monthName = "März"
-        } else if (monthName == "May" {
+        } else if (monthName == "May") {
             monthName = "Mai"
-        } else if (monthName == "June" {
+        } else if (monthName == "June") {
             monthName = "Juni"
-        } else if (monthName == "July" {
+        } else if (monthName == "July") {
             monthName = "Juli"
-        } else if (monthName == "October" {
+        } else if (monthName == "October") {
             monthName = "Oktober"
-        } else if (monthName == "December" {
+        } else if (monthName == "December") {
             monthName = "Dezember"
         } 
         
