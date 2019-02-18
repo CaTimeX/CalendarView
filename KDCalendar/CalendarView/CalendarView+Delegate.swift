@@ -50,7 +50,7 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
             
             let eventsForDaySelected = eventsByIndexPath[indexPath] ?? []
             delegate?.calendar(self, didSelectDate: date, withEvents: eventsForDaySelected)
-        }
+        } 
         
         self.reloadData()
     }
