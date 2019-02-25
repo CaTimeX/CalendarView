@@ -60,7 +60,7 @@ open class CalendarHeaderView: UIView {
             } else if (weekdayLabel.text == "Wed") {
                 weekdayLabel.text = "Mi"
             } else if (weekdayLabel.text == "Thu") {
-                weekdayLabel.text = "Fri"
+                weekdayLabel.text = "Do"
             } else if (weekdayLabel.text == "Fri") {
                 weekdayLabel.text = "Fr"
             } else if (weekdayLabel.text == "Sat") {
